@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Inknut+Antiqua:400|Inter:500,600");
 
+#website{
+  background-color: rgb(25,35,92);
+}
+
+#title{
+  
+  font-family: var(--font-family-inter);
+  color: white;
+  font-size: 60px;
+  background-color: #6782AB;
+  width: 1000px;
+  height: 90px;
+  text-align: center;
+  border-radius: 20px;
+}
+
 .screen a{
   display: contents;
   text-decoration: none;
@@ -20,7 +36,7 @@
 
 .home{
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(25,35,92);
   border: 1px none;
   display: flex;
   flex-direction: column;
