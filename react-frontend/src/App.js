@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import image from "./images/image-1.jpg"
+import plane from "./images/image-2.png"
 
 function App() {
   return (
@@ -11,10 +13,10 @@ function App() {
           <span className="span1">ealMapper</span>
         </h1>
         <div className = "overlap-group">
-          <img className = "image-1" src="image-1.png" alt="image 1" />
+          <img className = "image-1" src={image} alt="image 1" />
           <div className = "ellipse-3"></div>
-          <img className = "image-2" src="image-2.png" alt="image 2" />
-          <img className = "image-3" src="image-3.png" alt="image 3" />
+          <img className = "image-2" src={plane} alt="image 2" />
+          <img className = "image-3" src={plane} alt="image 3" />
           <div className="rectangle-2"></div>
           <div className="demo">
             Demo

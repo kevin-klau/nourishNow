@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Inknut+Antiqua:400|Inter:500,600");
+
+.screen a{
+  display: contents;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
+.container-center-horizontal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   pointer-events: none;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-center-horizontal > *{
+  flex-shrink: 0;
+  pointer-events: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  align-items: center;
+  background-color: #fff;
+  border: 1px none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 32px;
+  height: 982px;
+  padding: 54px 0;
+  width: 1512px;
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 133px;
+  text-align: center;
+  width: 502px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.span1{
+  color: #000;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-1);
+  font-weight: 500;
+}
+
+.overlap-group{
+  height: 708px;
+  position: relative;
+  width: 656px;
+}
+
+.image-1{
+  height: 565px;
+  left: 45px;
+  object-fit: cover;
+  position: absolute;
+  top: 49px;
+  width: 565px;
+}
+
+.ellipse-3{
+  border: 1px solid;
+  border-color: #000;
+  border-radius: 328px;
+  height: 656px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 656px;
+}
+
+.icon-plane{
+  height: 43px;
+  left: 100px;
+  object-fit: cover;
+  position: absolute;
+  top: 74px;
+  width: 43px;
+}
+
+.image-3{
+  height: 47px;
+  left: 585px;
+  object-fit: cover;
+  position: absolute;
+  top: 138px;
+  width: 47px;
+}
+
+.image-2{
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 100px;
+  top: 55px;
+}
+
+.rectangle-2{
+  background-color: #a3e9ff;
+  border-radius: 30px;
+  height: 84px;
+  left: 150px;
+  position: absolute;
+  top: 624px;
+  width: 356px;
+}
+
+.demo{
+  color: #000;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  left: 192px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 647px;
+  width: 271px;;
 }
