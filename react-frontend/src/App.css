@@ -109,11 +109,11 @@
 }
 
 #searchContainer{
-  height:1000px;
   justify-content: center;
   text-align: center;
   align-items: center;
   background-color: white;
+  height:1000px;
 }
 
 #titleSection{
@@ -189,42 +189,45 @@
 #Ingredients{
   background-color: #A7E5FF;
   font-family: var(--font-family-inter);
-  font-size:25px;
-  line-height:40px;
+  font-size:20px;
+  line-height:25px;
   padding-bottom:5px;
   padding-right: 50px;
   padding-left:50px;
-  width: 50%;
   border-radius: 20px;
-  margin-left:auto;
+  margin-left:40px;
+  margin-right:40px;
   margin-right:auto;
 }
 
 #IngredientsTitle{
   font-family: var(--font-family-inter);
-
   font-size: 50px;
   margin-bottom: 20px;
+  margin-left:60px;
+  margin-right:20px;
 }
 
 #Instructions{
   background-color: #A7E5FF;
   font-family: var(--font-family-inter);
-  font-size:25px;
-  line-height:30px;
+  font-size:20px;
+  line-height:20px;
   padding-bottom:5px;
   padding-right: 50px;
   padding-left:50px;
-  width: 75%;
   border-radius: 20px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:40px;
+  margin-right:40px;
   margin-bottom: 50px;
+  padding-bottom:40px;
 }
 
 #InstructionsTitle{
   font-family: var(--font-family-inter);
-  font-size: 50px;
+  font-size: 70px;
+  margin-left:40px;
+  margin-right:40px;
   margin-bottom: 20px;
   margin-top: 50px;
 }
@@ -232,23 +235,33 @@
 #Directions{
   background-color: #A7E5FF;
   font-family: var(--font-family-inter);
-  font-size:25px;
-  line-height:30px;
+  font-size:20px;
+  line-height:20px;
   padding-bottom:5px;
   padding-right: 50px;
   padding-left:50px;
-  width: 75%;
   border-radius: 20px;
   margin-left:auto;
+  margin-left:40px;
+  margin-right:40px;
   margin-right:auto;
   margin-bottom: 50px;
+  padding-bottom:40px;
 }
 
 #DirectionsTitle{
   font-family: var(--font-family-inter);
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
   margin-top: 50px;
+  margin-left:40px;
+  margin-right:40px;
+}
+
+#k{
+  font-family: var(--font-family-inter);
+  font-size: 30px;
+  margin-top:-30px;
 }
 
 .screen a{
