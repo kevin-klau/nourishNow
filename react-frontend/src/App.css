@@ -28,6 +28,12 @@
   background: #2A46AC;
 }
 
+#k{
+  font-family: var(--font-family-inter);
+  color: #000;
+  font-size: 20px;
+}
+
 #backgroundImages{
   margin-top: -904.5px;
   background-image: url("images/circle.png"), url("images/circle1.png"), url("images/circle2.png");
@@ -146,6 +152,7 @@
   flex-wrap: wrap;  
 }
 
+
 #input{
   margin-left: 60px;
   width: 55%;
@@ -177,6 +184,71 @@
   --bs-btn-hover-border-color: rgb(255,255,255);
   --bs-btn-active-bg: white;
   --bs-btn-active-color: rgb(255,213,79);
+}
+
+#Ingredients{
+  background-color: #A7E5FF;
+  font-family: var(--font-family-inter);
+  font-size:25px;
+  line-height:40px;
+  padding-bottom:5px;
+  padding-right: 50px;
+  padding-left:50px;
+  width: 50%;
+  border-radius: 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#IngredientsTitle{
+  font-family: var(--font-family-inter);
+
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#Instructions{
+  background-color: #A7E5FF;
+  font-family: var(--font-family-inter);
+  font-size:25px;
+  line-height:30px;
+  padding-bottom:5px;
+  padding-right: 50px;
+  padding-left:50px;
+  width: 75%;
+  border-radius: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 50px;
+}
+
+#InstructionsTitle{
+  font-family: var(--font-family-inter);
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+#Directions{
+  background-color: #A7E5FF;
+  font-family: var(--font-family-inter);
+  font-size:25px;
+  line-height:30px;
+  padding-bottom:5px;
+  padding-right: 50px;
+  padding-left:50px;
+  width: 75%;
+  border-radius: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 50px;
+}
+
+#DirectionsTitle{
+  font-family: var(--font-family-inter);
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .screen a{

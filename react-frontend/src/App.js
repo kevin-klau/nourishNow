@@ -25,7 +25,7 @@ function App() {
     <div className='rectangle2'/>
     <div id="backgroundImages">
       <div id="website"  className="container-center-horizontal">
-        <h1 id="title" style={{display:'inline-block'}}><strong>Meal <h1 id="titleBlue" style={{display:'inline-block'}}>Mapper</h1></strong></h1>
+        <h1 id="title" style={{display:'inline-block'}}><strong>  Meal <h1 id="titleBlue" style={{display:'inline-block'}}>Mapper</h1></strong></h1>
       </div>
         <div className="container-center-horizontal">
           <h2 id="description"> Select a state down below to view the food scarcity statistics</h2>
