@@ -17,6 +17,8 @@ export default function UserSearch({state}){
          
         const msg = input;
         
+        document.getElementById('k').innerHTML = ("<h1 id = 'free'></h1>")
+
         const completion = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [{role: "user", content: msg}],
@@ -31,7 +33,6 @@ export default function UserSearch({state}){
         
         let response5 = response4.replace("HIHI","</h4></div></div>")
         document.getElementById('k').innerHTML = (response5);
-
     };
     
     function userEnter(e){

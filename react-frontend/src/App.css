@@ -104,6 +104,27 @@
 
 }
 
+#theButtons{
+  font-family: var(--font-family-inter);
+  font-size: 30px;
+  border-color: white;
+  --bs-btn-bg: rgba(0,0,0,0);
+  --bs-btn-hover-bg: white;
+  --bs-btn-color: white;
+  --bs-btn-active-bg: rgba(0,0,0,0);
+  --bs-btn-active-color: white;
+  --bs-btn-hover-color: #6782AB;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-active-border-color: white;
+  border-width: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  margin-top: 35px;
+}
+
 #image1{
   transform: translateY(200px);
 }
@@ -178,7 +199,6 @@
   text-align:center;
   border-width: 3px;
   border-color: rgba(0,0,0,0);
-  --bs-btn-color: rgb(255,213,79);
   --bs-btn-hover-color: white;
   --bs-btn-hover-bg: #A7E5FF;
   --bs-btn-hover-border-color: rgb(255,255,255);
@@ -225,7 +245,7 @@
 
 #InstructionsTitle{
   font-family: var(--font-family-inter);
-  font-size: 70px;
+  font-size: 50px;
   margin-left:40px;
   margin-right:40px;
   margin-bottom: 20px;
@@ -251,7 +271,7 @@
 
 #DirectionsTitle{
   font-family: var(--font-family-inter);
-  font-size: 70px;
+  font-size: 50px;
   margin-bottom: 20px;
   margin-top: 50px;
   margin-left:40px;
@@ -262,6 +282,20 @@
   font-family: var(--font-family-inter);
   font-size: 30px;
   margin-top:-30px;
+}
+
+#free{
+  margin-top: 100px;
+  background-image:url("images/Gif.gif");
+  text-align: center;
+  margin-left:18vw;
+  height:500px;
+  background-repeat: no-repeat;
+}
+
+#chartPlace{
+  height: 500px;
+  width:100vw;
 }
 
 .screen a{
@@ -369,6 +403,17 @@
   position: absolute;
   top: 624px;
   width: 356px;
+}
+
+.rectangle3{
+  background-color: #4f6a91;
+  background-repeat: no-repeat;
+  margin-left: 10vw;
+  margin-top: -20px;
+  border-radius: 5px;
+  width: 80vw;
+  height: 500px;
+  left: 150px;
 }
 
 .demo{
