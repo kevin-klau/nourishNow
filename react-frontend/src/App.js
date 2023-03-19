@@ -10,7 +10,7 @@ import UserSearch from './search';
 function App() {
   
 
-  const [text, setText] = useState('Please Click On A State!')
+  const [text, setText] = useState('Click A State!')
   function handleClick (abbreviate) {
     setText(abb(abbreviate));
     document.getElementById('DataInfo').scrollIntoView();

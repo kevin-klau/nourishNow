@@ -82,14 +82,14 @@
   background-color: #6782AB;
   padding-top: 35px;
   text-align: center;
-  height: 1000px;
+  height: 1150px;
 }
 
 #button_home{
   font-family: var(--font-family-inter);
   font-size: 20px;
   height: 50px;
-  margin-top: 15px;
+  margin-top: 60px;
   border-color: white;
   --bs-btn-bg: rgba(0,0,0,0);
   --bs-btn-hover-bg: white;
@@ -300,6 +300,23 @@
 #chartPlace{
   height: 500px;
   width:100vw;
+}
+
+#infoText{
+  margin-top: 50px;
+  margin-left: 150px;
+  color: white;
+  font-family: var(--font-family-inter);
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.infoTextText{
+  font-size: 40px;
+  line-height: 70px;
+  justify-content: right;
+  margin-left: 110px; 
 }
 
 .screen a{
