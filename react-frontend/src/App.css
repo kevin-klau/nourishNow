@@ -4,6 +4,12 @@
   background-color: rgb(25,35,92);
 }
 
+#map{
+  background-color: rgb(25,35,92);
+  align-items: center;
+  text-align: center;
+}
+
 #title{
   
   font-family: var(--font-family-inter);
@@ -135,4 +141,12 @@
   text-align: center;
   top: 647px;
   width: 271px;;
+}
+
+path {
+  pointer-events: all;
+}
+path:hover {
+  opacity: 0.50;
+  cursor: pointer;
 }
