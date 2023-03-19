@@ -9,17 +9,21 @@ function App() {
   let gpt_response = "HAIDHOWAHI";
   const [a, setA] = useState("A");
   async function callgpt(input){
-
+    
     const { Configuration, OpenAIApi } = require("openai");
-
+    
+    console.log(process.env.REACT_APP_API_KEY)
 
     const configuration = new Configuration({
-    apiKey: 'process.env.REACT_APP_API_KEY',
+      apiKey: process.env.REACT_APP_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
+     
+    
+
     
     const msg = input;
-  
+    
     const completion = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [{role: "user", content: msg}],
