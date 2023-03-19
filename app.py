@@ -1,9 +1,12 @@
-from flask import Flask, jsonify
-#from mapleHacks import *
+from flask import Flask, jsonify, render_template
+from flask_cors import CORS
+from mapleHacks import createFourYearDf, graphParticipant, predictModel
 import io
 import base64
  
 app = Flask(__name__)
+CORS(app)
+
 
 @app.route('/graph/', methods=['GET', 'POST']) #We use the route() decorator to tell Flask what URL should trigger the function.
 def get_graph():

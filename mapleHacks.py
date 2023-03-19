@@ -71,7 +71,7 @@ dfNewYork.head()
 def number_format(x, pos):
     return '{:,.0f}'.format(x)
 
-def graphParticipant(df, participant, name=""):
+def graphParticipant(df, participant, cityName=""):
     plt.figure(figsize=(16, 5))
     plt.plot(df["Date"], df[participant], label=participant)
 
@@ -85,8 +85,8 @@ def graphParticipant(df, participant, name=""):
     plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(number_format))
     plt.show()
     
-    if name != "":
-        fig.savefig('{}--{}.png'.format(name, participant))
+    if cityName != "":
+        fig.savefig('{}--{}.png'.format(cityName, participant))
         
 graphParticipant(dfNewYork, "Total_Infants")
 
@@ -181,10 +181,10 @@ def makeLSTM_Model(trainX, testX, trainY, testY):
 model = makeLSTM_Model(trainX, testX, trainY, testY)
 
 
-# In[141]:
+# In[159]:
 
 
-def makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet, plot=False):
+def makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet, name=""):
     # Reshaping trainX and testX
     trainX = trainX.reshape((trainX.shape[0], 1, 1, 1, seq_size))
     testX = testX.reshape((testX.shape[0], 1, 1, 1, seq_size))
@@ -211,30 +211,44 @@ def makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet, plot=Fa
     print('MAPE Test Score: %.2f' % (mapeTrain))
     print('MAPE Test Score: %.2f' % (mapeTest))
     
-    if plot:
-        predictions = np.concatenate((trainPredict.flatten(), testPredict.flatten()))
-        actual = np.concatenate((trainY[0], testY[0]))
-        
-        plt.plot(predictions, label='Predicted Data')
-        plt.plot(actual, label='Actual Data')
+    # Displaying 
+    predictions = np.concatenate((trainPredict.flatten(), testPredict.flatten()))
+    actual = np.concatenate((trainY[0], testY[0]))
+    
+    plt.figure(figsize=(16, 5))
+    plt.plot(predictions, label='Predicted Data')
+    plt.plot(actual, label='Actual Data')
        
-        plt.legend()
-        plt.title('Testing Data and Prediction Data')
-        plt.xlabel('Time')
-        plt.ylabel('Value')
-        plt.show()
+    plt.legend()
+    plt.title('Testing Data and Prediction Data')
+    plt.xlabel('Months After Starting Date of Data')
+    plt.ylabel('Value')
+    
+    plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(number_format))
+    plt.show()
+    
+    if name != "":
+        fig.savefig('{}.png'.format(name))
         
-makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet, True)
+makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet)
 
 
-# In[142]:
+# In[160]:
 
 
-def predictModel(state)
+def predictModel(state, catg, seq_size, save=False):
+    train, test, scaler, dataSet = makeLSTM_TrainAndTest(state, catg)
+    
+    trainX, trainY = to_sequences(train, seq_size)
+    testX, testY = to_sequences(test, seq_size)
 
+    model = makeLSTM_Model(trainX, testX, trainY, testY)
+    
+    if save:
+        fileName = "Pred_{}--{}.png".format(state, catg)
+        makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet, fileName)
+    else:
+        makeLSTM_AccuracyScore(model, trainX, testX, trainY, testY, dataSet)
 
-# In[ ]:
-
-
-
+predictModel("Texas", "Total_Number_of_Participants", 5)
 
