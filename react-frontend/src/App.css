@@ -75,21 +75,21 @@
   margin-top: 10px;
   font-family: var(--font-family-inter);
   color:white;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #DataInfo{
   background-color: #6782AB;
   padding-top: 35px;
   text-align: center;
-  height: 1000px;
+  height: 1150px;
 }
 
 #button_home{
   font-family: var(--font-family-inter);
   font-size: 20px;
   height: 50px;
-  margin-top: 15px;
+  margin-top: 60px;
   border-color: white;
   --bs-btn-bg: rgba(0,0,0,0);
   --bs-btn-hover-bg: white;
@@ -102,6 +102,10 @@
   border-width: 3px;
   border-radius: 20px;
 
+}
+
+#buttons{
+  margin-top:40px;
 }
 
 #theButtons{
@@ -122,7 +126,7 @@
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 40px;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 
 #image1{
@@ -133,7 +137,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 246, 244);
   height:1000px;
 }
 
@@ -298,6 +302,23 @@
   width:100vw;
 }
 
+#infoText{
+  margin-top: 50px;
+  margin-left: 200px;
+  color: white;
+  font-family: var(--font-family-inter);
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.infoTextText{
+  font-size: 40px;
+  line-height: 70px;
+  justify-content: right;
+  margin-left: 110px; 
+}
+
 .screen a{
   display: contents;
   text-decoration: none;
@@ -409,11 +430,14 @@
   background-color: #4f6a91;
   background-repeat: no-repeat;
   margin-left: 10vw;
-  margin-top: -20px;
+  margin-top: 0px;
   border-radius: 5px;
   width: 80vw;
-  height: 500px;
+  height: 450px;
   left: 150px;
+  background-size: 95%;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .demo{

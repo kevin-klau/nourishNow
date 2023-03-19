@@ -10,7 +10,7 @@ import UserSearch from './search';
 function App() {
   
 
-  const [text, setText] = useState('Please Click On A State!')
+  const [text, setText] = useState('Click A State!')
   function handleClick (abbreviate) {
     setText(abb(abbreviate));
     document.getElementById('DataInfo').scrollIntoView();
@@ -25,7 +25,7 @@ function App() {
     <div className='rectangle2'/>
     <div id="backgroundImages">
       <div id="website"  className="container-center-horizontal">
-        <h1 id="title" style={{display:'inline-block'}}><strong>  Meal <h1 id="titleBlue" style={{display:'inline-block'}}>Mapper</h1></strong></h1>
+        <h1 id="title" style={{display:'inline-block'}}><strong>  nourish<h1 id="titleBlue" style={{display:'inline-block'}}>Now</h1></strong></h1>
       </div>
         <div className="container-center-horizontal">
           <h2 id="description"> Select a state down below to view the food scarcity statistics</h2>
