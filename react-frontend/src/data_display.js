@@ -20,6 +20,15 @@ import backgroundNYCInfant from './images/Pred_New York--Total_Infants.png';
 import backgroundArizPop from './images/Pred_Arizona--Total_Number_of_Participants.png';
 import backgroundArizCost from './images/Pred_Arizona--Food_Costs.png';
 import backgroundArizInfant from './images/Pred_Arizona--Total_Infants.png';
+import backgroundColPop from './images/Pred_Colorado--Total_Number_of_Participants.png';
+import backgroundColCost from './images/Pred_Colorado--Food_Costs.png';
+import backgroundColInfant from './images/Pred_Colorado--Total_Infants.png';
+import backgroundConnPop from './images/Pred_Connecticut--Total_Number_of_Participants.png';
+import backgroundConnCost from './images/Pred_Connecticut--Food_Costs.png';
+import backgroundConnInfant from './images/Pred_Connecticut--Total_Infants.png';
+import backgroundDelPop from './images/Pred_Delaware--Total_Number_of_Participants.png';
+import backgroundDelCost from './images/Pred_Delaware--Food_Costs.png';
+import backgroundDelInfant from './images/Pred_Delaware--Total_Infants.png';
 import data from './data.json';
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -105,6 +114,30 @@ export default function Data({state}){
                 return backgroundArizInfant;
             }else{
                 return backgroundArizCost;
+            }            
+        }else if (state === "Colorado"){
+            if(thing === "pop"){
+                return backgroundColPop;
+            }else if (thing === "infant"){
+                return backgroundColInfant;
+            }else{
+                return backgroundColCost;
+            }            
+        }else if (state === "Connecticut"){
+            if(thing === "pop"){
+                return backgroundConnPop;
+            }else if (thing === "infant"){
+                return backgroundConnInfant;
+            }else{
+                return backgroundConnCost;
+            }            
+        }else if (state === "Delaware"){
+            if(thing === "pop"){
+                return backgroundDelPop;
+            }else if (thing === "infant"){
+                return backgroundDelInfant;
+            }else{
+                return backgroundDelCost;
             }            
         }else{
             if(thing === "pop"){
