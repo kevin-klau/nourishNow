@@ -47,7 +47,7 @@ export default function UserSearch({state}){
                 <h1 id="searchTitle"><strong>RECIPES</strong></h1>
             </div>
             <form id="restSection" onSubmit={userEnter}>
-                <input onChange={userType} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Subject Here" aria-label="Search"></input>
+                <input onChange={userType} id="input" className="form-control me-2 d-flex clear" type="search" placeholder="Enter Keywords Here" aria-label="Search"></input>
                 <button id="inputButton" className="btn btn-outline-success" type="submit" onClick={userEnter}>🔎︎</button>
             </form>
             <div id="k" style={{ overflowWrap: "break-word", maxWidth: "100%" }}></div>

@@ -28,7 +28,7 @@ import backgroundConnCost from './images/Pred_Connecticut--Food_Costs.png';
 import backgroundConnInfant from './images/Pred_Connecticut--Total_Infants.png';
 import backgroundDelPop from './images/Pred_Delaware--Total_Number_of_Participants.png';
 import backgroundDelCost from './images/Pred_Delaware--Food_Costs.png';
-import backgroundDelInfant from './images/Pred_Delaware--Total_Infants.png';
+import backgroundDelInfant from './images/Pred_Delaware--Total_Infants.png';    
 import data from './data.json';
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
