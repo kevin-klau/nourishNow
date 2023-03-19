@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import background from './images/circle.png';
 import backgroundAlabamaPop from './images/Pred_Alabama--Total_Number_of_Participants.png';
 import backgroundAlabamaCost from './images/Pred_Alabama--Food_Costs.png';
 import backgroundAlabamaInfant from './images/Pred_Alabama--Total_Infants.png';
@@ -9,6 +8,12 @@ import backgroundCaliInfant from './images/Pred_California--Total_Infants.png';
 import backgroundTexPop from './images/Pred_Texas--Total_Number_of_Participants.png';
 import backgroundTexCost from './images/Pred_Texas--Food_Costs.png';
 import backgroundTexInfant from './images/Pred_Texas--Total_Infants.png';
+import backgroundOklPop from './images/Pred_Oklahoma--Total_Number_of_Participants.png';
+import backgroundOklCost from './images/Pred_Oklahoma--Food_Costs.png';
+import backgroundOklInfant from './images/Pred_Oklahoma--Total_Infants.png';
+import backgroundHawPop from './images/Pred_Hawaii--Total_Number_of_Participants.png';
+import backgroundHawCost from './images/Pred_Hawaii--Food_Costs.png';
+import backgroundHawInfant from './images/Pred_Hawaii--Total_Infants.png';
 import data from './data.json';
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -63,6 +68,22 @@ export default function Data({state}){
             }else{
                 return backgroundCaliCost;
             }
+        }else if (state === "Oklahoma"){
+            if(thing === "pop"){
+                return backgroundOklPop;
+            }else if (thing === "infant"){
+                return backgroundOklInfant;
+            }else{
+                return backgroundOklCost;
+            }            
+        }else if (state === "Hawaii"){
+            if(thing === "pop"){
+                return backgroundHawPop;
+            }else if (thing === "infant"){
+                return backgroundHawInfant;
+            }else{
+                return backgroundHawCost;
+            }            
         }else{
             if(thing === "pop"){
                 return backgroundAlabamaPop;

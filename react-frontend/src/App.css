@@ -137,7 +137,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 246, 244);
   height:1000px;
 }
 
@@ -304,7 +304,7 @@
 
 #infoText{
   margin-top: 50px;
-  margin-left: 150px;
+  margin-left: 200px;
   color: white;
   font-family: var(--font-family-inter);
   text-align: left;
