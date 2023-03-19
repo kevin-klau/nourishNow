@@ -25,7 +25,7 @@
   width: 25px;
   height: 894.5px;
   transform: translateX(88vw);
-  background: #A6BAFF;
+  background: #2A46AC;
 }
 
 #backgroundImages{
@@ -84,10 +84,99 @@
   font-size: 20px;
   height: 50px;
   margin-top: 15px;
+  border-color: white;
+  --bs-btn-bg: rgba(0,0,0,0);
+  --bs-btn-hover-bg: white;
+  --bs-btn-color: white;
+  --bs-btn-active-bg: rgba(0,0,0,0);
+  --bs-btn-active-color: white;
+  --bs-btn-hover-color: #6782AB;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-active-border-color: white;
+  border-width: 3px;
+  border-radius: 20px;
+
 }
 
 #image1{
   transform: translateY(200px);
+}
+
+#searchContainer{
+  height:1000px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+#titleSection{
+  height:200px;
+  background-color: #E1F1FF;
+  padding-top: 50px;
+  background-image: url("images/icon1.png"), url("images/icon2.png"), url("images/icon3.png"), url("images/icon4.png");
+  background-position: bottom -8px right 250px , top -5px right -30px, bottom 0px left 9px, top -55px left 320px;
+  background-repeat: no-repeat;
+
+}
+
+#searchTitle{
+  background-color: #A7E5FF;
+  height:110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:15px;
+  width: 400px;
+  font-size: 60px;
+  font-family: var(--font-family-inter);
+  border-radius: 15px;
+}
+
+#restSection{
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  flex-wrap: wrap;  
+}
+
+#input{
+  margin-left: 60px;
+  width: 55%;
+  margin-top: 20px;
+  font-size: 20px;
+  height: 50px;
+  text-align:center;
+  font-family: var(--font-family-inter);
+  border-color: black;
+  color:black;
+  border-width: 0;
+  background-color: #A7E5FF;
+  border-radius: 100px;
+  margin-right:-20px;
+}
+
+#inputButton{
+  margin-top: 19px;
+  margin-left:10px;
+  font-size: 17px;
+  height: 50px;
+  width: 50px;
+  text-align:center;
+  border-width: 3px;
+  border-color: rgba(0,0,0,0);
+  --bs-btn-color: rgb(255,213,79);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #A7E5FF;
+  --bs-btn-hover-border-color: rgb(255,255,255);
+  --bs-btn-active-bg: white;
+  --bs-btn-active-color: rgb(255,213,79);
 }
 
 .screen a{
@@ -217,4 +306,15 @@ path {
 path:hover {
   opacity: 0.50;
   cursor: pointer;
+}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input:focus::placeholder {
+  color: transparent;
 }

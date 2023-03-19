@@ -4,42 +4,16 @@ import USAMap from "react-usa-map";
 import abb from "./state_transfer";
 import Data from "./data_display";
 import image1 from "./images/circle.png";
+import statesCustomConfig from './state_colors';
+import UserSearch from './search';
 
 function App() {
-  let gpt_response = "HAIDHOWAHI";
-  const [a, setA] = useState("A");
-  async function callgpt(input){
-    
-    const { Configuration, OpenAIApi } = require("openai");
-    
-    const configuration = new Configuration({
-      apiKey: process.env.REACT_APP_API_KEY,
-    });
-    const openai = new OpenAIApi(configuration);
-     
-    
-
-    
-    const msg = input;
-    
-    const completion = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
-    messages: [{role: "user", content: msg}],
-    });
   
-    const response = completion.data.choices[0].message.content;
-    console.log(completion.data.choices[0].message.content);
-    gpt_response = response;
-    const name = document.createTextNode(gpt_response);
-    document.getElementById("gpt_result").appendChild(name);
-  };
 
-  const [text, setText] = useState('insert state')
+  const [text, setText] = useState('Please Click On A State!')
   function handleClick (abbreviate) {
     setText(abb(abbreviate));
     document.getElementById('DataInfo').scrollIntoView();
-    callgpt("how do cows eat");
-    
   }
   
   return (
@@ -59,11 +33,13 @@ function App() {
       <div id="map">
         <USAMap
           onClick={(event) => handleClick(event.target.dataset.name)}
+          customize={statesCustomConfig()}
         />
       </div>
     </div>
     {/*<h1 id = "gpt_result"></h1>*/}
     <Data id="theData" state={text}></Data>
+    <UserSearch state={text}></UserSearch>
     </>
   );
 }
