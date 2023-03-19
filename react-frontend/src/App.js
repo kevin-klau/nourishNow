@@ -11,12 +11,13 @@ function App() {
   async function callgpt(input){
 
     const { Configuration, OpenAIApi } = require("openai");
-  
+
+
     const configuration = new Configuration({
-    apiKey: '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',
+    apiKey: 'process.env.REACT_APP_API_KEY',
     });
     const openai = new OpenAIApi(configuration);
-  
+    
     const msg = input;
   
     const completion = await openai.createChatCompletion({
