@@ -14,6 +14,12 @@ import backgroundOklInfant from './images/Pred_Oklahoma--Total_Infants.png';
 import backgroundHawPop from './images/Pred_Hawaii--Total_Number_of_Participants.png';
 import backgroundHawCost from './images/Pred_Hawaii--Food_Costs.png';
 import backgroundHawInfant from './images/Pred_Hawaii--Total_Infants.png';
+import backgroundNYCPop from './images/Pred_New York--Total_Number_of_Participants.png';
+import backgroundNYCCost from './images/Pred_New York--Food_Costs.png';
+import backgroundNYCInfant from './images/Pred_New York--Total_Infants.png';
+import backgroundArizPop from './images/Pred_Arizona--Total_Number_of_Participants.png';
+import backgroundArizCost from './images/Pred_Arizona--Food_Costs.png';
+import backgroundArizInfant from './images/Pred_Arizona--Total_Infants.png';
 import data from './data.json';
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -83,6 +89,22 @@ export default function Data({state}){
                 return backgroundHawInfant;
             }else{
                 return backgroundHawCost;
+            }            
+        }else if (state === "New York"){
+            if(thing === "pop"){
+                return backgroundNYCPop;
+            }else if (thing === "infant"){
+                return backgroundNYCInfant;
+            }else{
+                return backgroundNYCCost;
+            }            
+        }else if (state === "Arizona"){
+            if(thing === "pop"){
+                return backgroundArizPop;
+            }else if (thing === "infant"){
+                return backgroundArizInfant;
+            }else{
+                return backgroundArizCost;
             }            
         }else{
             if(thing === "pop"){

@@ -137,7 +137,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: rgb(255, 246, 244);
+  background-color: white;
   height:1000px;
 }
 
@@ -292,7 +292,7 @@
   margin-top: 100px;
   background-image:url("images/Gif.gif");
   text-align: center;
-  margin-left:18vw;
+  margin-left:25vw;
   height:500px;
   background-repeat: no-repeat;
 }
