@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nourishNow/static/css/main.707c9840.css",
-    "main.js": "/nourishNow/static/js/main.d7dbfe3a.js",
+    "main.js": "/nourishNow/static/js/main.f757e72d.js",
     "static/js/787.0f148dca.chunk.js": "/nourishNow/static/js/787.0f148dca.chunk.js",
     "static/media/Gif.gif": "/nourishNow/static/media/Gif.8a28286b24367637e2c1.gif",
     "static/media/Pred_Texas--Food_Costs.png": "/nourishNow/static/media/Pred_Texas--Food_Costs.eb85c02c33eb224da037.png",
@@ -40,11 +40,11 @@
     "static/media/icon4.png": "/nourishNow/static/media/icon4.2e94cfe8b50a486593f4.png",
     "index.html": "/nourishNow/index.html",
     "main.707c9840.css.map": "/nourishNow/static/css/main.707c9840.css.map",
-    "main.d7dbfe3a.js.map": "/nourishNow/static/js/main.d7dbfe3a.js.map",
+    "main.f757e72d.js.map": "/nourishNow/static/js/main.f757e72d.js.map",
     "787.0f148dca.chunk.js.map": "/nourishNow/static/js/787.0f148dca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.707c9840.css",
-    "static/js/main.d7dbfe3a.js"
+    "static/js/main.f757e72d.js"
   ]
 }
